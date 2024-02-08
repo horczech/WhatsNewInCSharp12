@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using PrimaryConstructors;
+﻿using PrimaryConstructors;
 
 Console.WriteLine("Say hello to primary constructors!");
 

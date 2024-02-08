@@ -14,7 +14,7 @@ public struct FixedSizeBuffer
 
 
 //old way
-public unsafe struct OldFixedSizeBuffer
+public struct OldFixedSizeBuffer
 {
-    public fixed int MyBuffer[10]; // Fixed-size buffer of 10 integers
+    public unsafe fixed int MyBuffer[10]; // Fixed-size buffer of 10 integers
 }

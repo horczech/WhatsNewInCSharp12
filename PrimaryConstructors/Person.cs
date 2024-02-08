@@ -2,18 +2,26 @@
 
 //Notes:
 // - is it a private field?
+// - are they mutable?
+// - are they properties?
 // - how to add more constructors?
-// - use case for props initialization 
-// - Dependency Injection
-// - Primary constructor parameters may not be stored if they aren't needed
-// - Primary constructor parameters aren't members of the class. For example, a primary constructor parameter named firstName can't be accessed as this.firstName
-// - Primary constructor parameters are mutable
-// - Primary constructor parameters don't become properties.
-// - use-case: initialize base class
+// - how to use inheritance?
+// - does Dependency Injection works with primary constructors?
 
-public class Person(string firstName, string lastName)
+public class Person
 {
+    private readonly string _firstName;
+    private readonly string _lastName;
+
+    public Person(string firstName, string lastName) {
+        _firstName = firstName;
+        _lastName = lastName;
+    }
+
     public string FullName() {
-        return $"{firstName} {lastName}";
+        return $"{_firstName} {_lastName}";
     }
 }
+
+public record PersonRecord(string FirstName, string LastName);
+    

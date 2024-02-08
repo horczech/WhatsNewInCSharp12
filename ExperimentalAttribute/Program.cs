@@ -1,4 +1,4 @@
-﻿using ExperimentalAttr;
-#pragma warning disable RiskyFeatureId
+﻿Console.WriteLine("Experimental attr");
 
-var riskyFeature = new RiskyFeature();
+
+
